@@ -1,0 +1,156 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+:root {
+  --text_lg: 32px;
+  --text_bold: 100;
+  --text_md: 22px;
+  --text_sm: 18px;
+  --text-light: 100;
+  --card_color: #d9d9d9;
+  --icon_size: 50px;
+  --cyber_color: #60e399;
+  --img_size: 100px;
+}
+
+@media screen and (max-width: 1400px) {
+  :root {
+    --text_lg: 24px;
+    --text_md: 16px;
+    --text_sm: 12px;
+    --icon_size: 35px;
+    --img_size: 80px;
+  }
+}
+
+.wrapper {
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: url(arrow.png), auto;
+  width: 55vw;
+  transform: scale(1);
+  transition: 0.4s ease-out;
+}
+
+.wrapper:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: var(--text_lg);
+  font-weight: var(--text_bold);
+  margin: 1rem;
+}
+h2 span {
+  position: relative;
+  z-index: 2;
+  margin: 0 0.5rem;
+}
+h2 span::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 55%;
+  top: 5px;
+  left: -12px;
+  z-index: -1;
+  background-color: var(--cyber_color);
+  opacity: 0.8;
+}
+
+h3 {
+  font-weight: var(--text-light);
+  margin: 1rem;
+  font-size: var(--text_md);
+}
+
+p {
+  font-size: var(--text_md);
+  text-align: center;
+  margin: 1rem 0;
+}
+/* about */
+.about {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about img {
+  height: var(--img_size);
+  border-radius: 10%;
+  margin: 0 2rem;
+}
+
+.image {
+  position: relative;
+}
+/* .image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 15%;
+  height: 40%;
+  background-color: var(--cyber_color);
+  z-index: 1;
+  opacity: 0.8;
+} */
+/* technologies */
+
+.technologies {
+  width: 50%;
+}
+.item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(0);
+  transition: 0.4s ease-out;
+}
+
+.item span {
+  font-size: var(--text_sm);
+}
+
+.technologies i {
+  font-size: var(--icon_size);
+  color: var(--cyber_color);
+  padding: 1rem;
+}
+.item:hover {
+  transform: translateY(-8px);
+}
+
+/* projects */
+.projects {
+  width: 50%;
+}
+.carousel {
+  width: 70%;
+  margin: 0 auto;
+}
+.card {
+  background-color: #100e17;
+}
+
+.carousel-item {
+  background-color: red;
+}
