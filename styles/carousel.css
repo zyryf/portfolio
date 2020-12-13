@@ -1,0 +1,66 @@
+.embla {
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.embla::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 8%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--grey_color),
+    transparent 100%
+  );
+  z-index: 99;
+}
+
+.embla::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 8%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left,
+    var(--grey_color),
+    transparent 100%
+  );
+  z-index: 99;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 70%;
+  padding: 0 10px;
+}
+
+.embla__slide__inner {
+  position: relative;
+  overflow: hidden;
+  height: 190px;
+}
+
+.embla__slide__img {
+  width: 100%;
+  border-radius: 20px;
+}

@@ -1,99 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="particles.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/carousel.css">
+
+    <link rel="stylesheet" href="styles/particles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <title>Document</title>
 </head>
+
 <body>
 
     <script src="https://kit.fontawesome.com/f125359ab3.js" crossorigin="anonymous"></script>
-   
-  
- <!-- particles.js container --> <div id="particles-js"></div> 
 
- <div class="main">
-    <div class="wrapper">
-        <section class="about">
-            <div class="image"><img src="zdjecieCV.jpg" alt="me"></div>
-           
-           
-        <div class="text">
-            <h2><span>Hey.</span> I'm  Szymon - <span>Frontend Developer</span></h2>
-        <h3>Here are some inforamtions about me</h3>
-        </div>    
-        
-        </section>
-      
-        <section class="technologies">
-            <p>Technology stack</p>
-            
-            <div class="item-wrapper">
-                <div class="item"><i class="fab fa-html5"></i>
-                    <span>HTML<span></span></div>
-                
-                <div class="item"> <i class="fab fa-css3-alt"></i> <span>CSS</span> </div>
-               
-                <div class="item">  <i class="fab fa-sass"></i><span>Sass</span></div>
-              
-    
-                <div class="item">   <i class="fab fa-js-square"></i><span>JavaScript</span></div>
-             
-                <div class="item"> <i class="fab fa-node"></i><span>Node.js</span></div>
-               <div class="item"> <i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-               <div class="item"> <i class="fab fa-git"></i><span>Git</span></div>
-               <div class="item"> <i class="fab fa-vuejs"></i><span>Vue.js</span></div>
-               <div class="item">  <i class="fab fa-react"></i><span>React.js</span></div>
-               
-            </div>
-        
-          
-        </section>
-        
-        <section class="projects">
-            <p>My projects so far</p>
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                 
-                  </div>
-                  <div class="carousel-item">
-                   
-                  </div>
-                  <div class="carousel-item">
-                 
-                  </div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <div class="main">
+        <div class="wrapper">
+            <section class="about">
+                <div class="image">
+                    <img src="assets/avatar.jpg" alt="me">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </a>
-              </div>
 
 
 
-        </section>
+                <div class="text">
+                    <h2><span>Hey.</span> I'm Szymon - <span>Frontend Developer</span></h2>
+                    <h3>Here are some inforamtions about me</h3>
+                </div>
+
+            </section>
+
+            <section class="technologies">
+                <p>Technology stack</p>
+
+                <div class="item-wrapper">
+                    <div class="item"><i class="fab fa-html5"></i>
+                        <span>HTML<span></span>
+                    </div>
+
+                    <div class="item"> <i class="fab fa-css3-alt"></i> <span>CSS</span> </div>
+
+                    <div class="item"> <i class="fab fa-sass"></i><span>Sass</span></div>
+
+
+                    <div class="item"> <i class="fab fa-js-square"></i><span>JavaScript</span></div>
+
+                    <div class="item"> <i class="fab fa-node"></i><span>Node.js</span></div>
+                    <div class="item"> <i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                    <div class="item"> <i class="fab fa-git"></i><span>Git</span></div>
+                    <div class="item"> <i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+                    <div class="item"> <i class="fab fa-react"></i><span>React.js</span></div>
+
+                </div>
+
+
+            </section>
+
+            <section class="projects">
+                <p>Some of my projects</p>
+
+
+                <!-- Embla -->
+                <div class="embla" id="embla">
+                  
+                    <div class="embla__container">
+                        <div class="embla__slide">
+                            <div class="embla__slide__inner">
+
+                                
+                                <img class="embla__slide__img" src="assets/splitting-bills.png" alt="splitting-bills"
+                                    srcset="">
+                            </div>
+
+                        </div>
+                        <div class="embla__slide">
+                            <div class="embla__slide__inner">
+                                
+                                <img class="embla__slide__img" src="assets/softstart.png" alt="softstart" srcset="">
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="embla__slide"> <h5>Splitting Bills App</h5></div> -->
+                    </div>
+                    
+                </div>
+
+
+
+
+
+
+
+                <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h5>Splitting Bills App</h5>
+                            <img  class ="project-image" src="assets/splitting-bills.png" alt="splitting-bills" srcset="">
+                            <div class="button-wrapper">
+                                <a class="redirect" href="">code</a>
+                                <a class="redirect" href="">live</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h5>SoftStart product page</h5>
+                            <img  class ="project-image" src="assets/softstart.png" alt="softstart" srcset="">
+                           
+                            <div class="button-wrapper">
+                                <a class="redirect" href="">code</a>
+                                <a class="redirect" href="">live</a>
+                            </div>
+                        </div>
+                            <div class="carousel-item">
+                                <h5>Costam costam</h5>
+                                <div class="button-wrapper">
+                                    <a class="redirect" href="">code</a>
+                                    <a class="redirect" href="">live</a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+
+                    </div>
+
+
+                </div> -->
+
+
+
+
+
+            </section>
+        </div>
     </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- particles -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- embla carousel -->
+    <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
+    </script>
+    <script>
+        var emblaNode = document.getElementById("embla");
+        var embla = EmblaCarousel(emblaNode);
+    </script>
+
+
     <script src="particles.js"></script>
-    
+    <script src="carousel.js"></script>
+
 </body>
+
 </html>
